@@ -15,8 +15,9 @@ import (
 type urlResponse struct {
     URL string      `json:"url"`  
 }
-
+// lets gooooooooo
 func main() {
+
     resp, err := http.Get("https://api.waifu.pics/sfw/kiss")
     
     if err != nil {
