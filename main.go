@@ -17,9 +17,7 @@ type urlResponse struct {
 }
 
 func main() {
-    client := http.Client{}
-
-    resp, err := client.Get("https://api.waifu.pics/sfw/kiss")
+    resp, err := http.Get("https://api.waifu.pics/sfw/kiss")
     
     if err != nil {
         log.Fatal(err)
